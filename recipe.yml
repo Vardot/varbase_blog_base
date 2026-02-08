@@ -1,0 +1,23 @@
+name: Varbase Blog Base
+description: A recipe to provide a blog post content type, listing page, and related configuration for Varbase. Use Blog to publish blog posts by different authors in the Blog section of the site.
+type: Varbase Blog
+recipes:
+  - varbase_content_base
+  - varbase_media_base
+  - varbase_seo_base
+  - varbase_workflow_base
+install:
+  - selective_better_exposed_filters
+config:
+  strict: false
+  actions:
+    user.role.content_editor:
+      grantPermissions:
+        - 'create blog content'
+        - 'delete blog revisions'
+        - 'delete any blog content'
+        - 'edit any blog content'
+        - 'revert blog revisions'
+        - 'view blog revisions'
+    workflows.workflow.varbase_editorial_workflow:
+      addNodeTypes: ['blog']
