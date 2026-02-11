@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.vartheme_bs5.card
+    - core.entity_view_mode.node.text_card_large
+    - field.field.node.blog.field_description
+    - node.type.blog
+  module:
+    - node
+    - options
+id: node.blog.text_card_large
+content_entity_type_id: node
+content_entity_type_bundle: blog
+content_entity_type_view_mode: text_card_large
+component_tree:
+  -
+    uuid: b2f5a6b7-d8e9-4301-2345-890123456790
+    component_id: sdc.vartheme_bs5.card
+    component_version: a1102c37d3eb70ce
+    inputs: '{"shadow":"default","border":"default","rounded":"default","background":"default","style":"framed","orientation":"vertical","heading_text":{"sourceType":"dynamic","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"},"level":3,"text":{"sourceType":"dynamic","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_description\u241e\u241fvalue"},"is_text_centered":false,"button_label":"Learn more","button_variant":"link","extra_classes":"mb-3"}'
+exposed_slots: {  }

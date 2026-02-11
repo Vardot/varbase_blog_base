@@ -15,16 +15,11 @@ dependencies:
     - media
     - text
     - user
-id: node.blog.default
+id: node.blog.full
 targetEntityType: node
 bundle: blog
-mode: default
+mode: full
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_content:
     type: text_default
     label: hidden
