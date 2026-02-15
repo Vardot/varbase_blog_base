@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
-    - field.storage.node.field_blog_categories
+    - core.entity_view_mode.node.featured_card_medium
+    - core.entity_view_mode.node.impressed_card_medium
+    - core.entity_view_mode.node.text_card_medium
     - field.storage.node.field_description
-    - field.storage.node.field_tags
     - node.type.blog
     - taxonomy.vocabulary.blog_categories
     - taxonomy.vocabulary.tags
@@ -293,7 +293,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: card
+          view_mode: text_card_medium
       query:
         type: views_query
         options:
@@ -322,6 +322,28 @@ display:
     display_plugin: block
     position: 2
     display_options:
+      pager:
+        type: full
+        options:
+          offset: 0
+          pagination_heading_level: h4
+          items_per_page: 8
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: bef
         options:
@@ -494,9 +516,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -542,9 +561,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -608,16 +624,31 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: featured_card_medium
       defaults:
         use_ajax: false
+        pager: false
         exposed_form: false
+        style: false
+        row: false
         filters: false
         filter_groups: false
         header: false
       use_ajax: true
       display_description: ''
       header: {  }
-      display_extenders: {  }
+      exposed_block: true
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -657,27 +688,34 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
+      style:
+        type: grid_responsive
+        options:
+          uses_fields: false
+          columns: 3
+          cell_min_width: 100
+          grid_gutter: 10
+          alignment: horizontal
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: impressed_card_medium
       defaults:
         title: false
         pager: false
+        style: false
+        row: false
         sorts: false
         header: false
+        footer: false
       display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<a href="/blog">All posts</a>'
-            format: full_html
+      header: {  }
+      footer: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
           tokenize: false
-      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -774,13 +812,26 @@ display:
           validate_options: {  }
           break_phrase: false
           not: true
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: text_card_medium
       defaults:
         empty: false
         title: false
         pager: false
+        style: false
+        row: false
         arguments: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       block_hide_empty: true
     cache_metadata:
       max-age: -1
