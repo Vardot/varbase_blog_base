@@ -204,7 +204,7 @@ content:
       length_indicator:
         indicator: true
         indicator_opt:
-          optimin: 10
+          optimin: 15
           optimax: 50
           tolerance: 10
       advanced_text_formatter:
