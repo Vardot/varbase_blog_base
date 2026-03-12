@@ -14,8 +14,10 @@ dependencies:
     - node.type.blog
     - workflows.workflow.varbase_editorial_workflow
   module:
+    - advanced_text_formatter
     - content_moderation
     - field_group
+    - length_indicator
     - media_library
     - path
     - scheduler
@@ -128,6 +130,7 @@ content:
       show_entity_id: 0
       show_info_label: 0
       info_label: ''
+      parent_selection: 1
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
@@ -171,6 +174,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 18
@@ -192,7 +200,15 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 10
+          optimax: 50
+          tolerance: 10
+      advanced_text_formatter:
+        show_token_tree: 0
   translation:
     weight: 12
     region: content
