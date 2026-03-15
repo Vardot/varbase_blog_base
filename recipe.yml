@@ -16,7 +16,37 @@ config:
         - 'create blog content'
         - 'delete blog revisions'
         - 'delete any blog content'
+        - 'delete own blog content'
         - 'edit any blog content'
+        - 'edit own blog content'
+        - 'revert blog revisions'
+        - 'view blog revisions'
+    user.role.content_admin:
+      grantPermissions:
+        - 'create blog content'
+        - 'delete any blog content'
+        - 'delete blog revisions'
+        - 'delete own blog content'
+        - 'edit any blog content'
+        - 'edit own blog content'
+        - 'revert blog revisions'
+        - 'view blog revisions'
+    user.role.seo_admin:
+      grantPermissions:
+        - 'create blog content'
+        - 'delete any blog content'
+        - 'delete own blog content'
+        - 'edit any blog content'
+        - 'edit own blog content'
+        - 'view blog revisions'
+    user.role.site_admin:
+      grantPermissions:
+        - 'create blog content'
+        - 'delete any blog content'
+        - 'delete blog revisions'
+        - 'delete own blog content'
+        - 'edit any blog content'
+        - 'edit own blog content'
         - 'revert blog revisions'
         - 'view blog revisions'
     workflows.workflow.varbase_editorial_workflow:
