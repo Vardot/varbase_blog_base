@@ -26,8 +26,8 @@ component_tree:
   -
     uuid: 12f585e3-f476-48b1-a7d2-16614ec08489
     component_id: sdc.vartheme_bs5.heading
-    component_version: 314fe2483b490e6d
-    inputs: '{"heading_text":{"sourceType":"dynamic","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
+    component_version: 4864e5effaf99a6f
+    inputs: '{"heading_text":{"sourceType":"dynamic","expression":"ℹ︎␜entity:node:blog␝title␞␟value"}}'
   -
     uuid: 02a93dcf-d3fa-4718-b7ef-5a019d0a66b9
     component_id: sdc.vartheme_bs5.image
@@ -36,6 +36,6 @@ component_tree:
   -
     uuid: eb3e968b-08ca-456a-853f-7a62ca1abee3
     component_id: sdc.vartheme_bs5.text
-    component_version: 6d5fce63333b4423
+    component_version: 4743e86f0a4eafed
     inputs: '{"text":{"sourceType":"dynamic","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"},"text_size":"none","text_color":"text-body"}'
 exposed_slots: {  }
