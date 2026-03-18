@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.impressed_card_xsmall
+    - field.field.node.blog.field_blog_categories
     - field.field.node.blog.field_content
     - field.field.node.blog.field_description
     - field.field.node.blog.field_featured_image
@@ -30,6 +31,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_blog_categories: true
   field_content: true
   field_description: true
   field_seo_analysis: true
@@ -37,5 +39,4 @@ hidden:
   field_seo_image: true
   field_seo_title: true
   field_tags: true
-  langcode: true
   links: true

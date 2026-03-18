@@ -26,5 +26,5 @@ type: blog
 description: 'Use <em>Blog</em> to publish blog posts by different authors in the Blog section of the site.'
 help: ''
 new_revision: true
-preview_mode: 1
+preview_mode: 0
 display_submitted: true

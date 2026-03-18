@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     config:
       - node.type.blog
-  module:
-    - node
 id: blog_content
 label: 'Blog content'
 type: 'canonical_entities:node'

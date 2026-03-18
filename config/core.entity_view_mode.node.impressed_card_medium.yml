@@ -5,5 +5,6 @@ dependencies:
     - node
 id: node.impressed_card_medium
 label: 'Impressed card - medium'
+description: null
 targetEntityType: node
 cache: true
