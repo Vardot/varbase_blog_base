@@ -27,7 +27,7 @@ component_tree:
   -
     uuid: 12f585e3-f476-48b1-a7d2-16614ec08489
     component_id: sdc.vartheme_bs5.heading
-    component_version: 9658d7e35d15d3d5
+    component_version: e3d793250a52296e
     inputs: '{"level":1,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
   -
     uuid: 61ee420f-a3c5-47da-87d1-8821baf57d7b
