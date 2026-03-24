@@ -662,8 +662,8 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: '<h2 class="visually-hidden">Blog posts</h2>'
-            format: full_html
+            value: '<h2 class="visually-hidden">All blog posts</h2>'
+            format: code_html
           tokenize: false
       exposed_block: true
       display_extenders:
