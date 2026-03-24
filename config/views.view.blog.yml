@@ -651,7 +651,20 @@ display:
         header: false
       use_ajax: true
       display_description: ''
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<h2 class="visually-hidden">Blog posts</h2>'
+            format: full_html
+          tokenize: false
       exposed_block: true
       display_extenders:
         metatag_display_extender:
