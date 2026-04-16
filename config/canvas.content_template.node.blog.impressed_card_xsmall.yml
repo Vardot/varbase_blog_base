@@ -30,6 +30,6 @@ component_tree:
     slot: content
     uuid: 75d1b88b-9b9f-4525-8fc0-3dde57e49f32
     component_id: sdc.vartheme_bs5.heading
-    component_version: e6bff30240e54097
+    component_version: e3d793250a52296e
     inputs: '{"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
 exposed_slots: {  }

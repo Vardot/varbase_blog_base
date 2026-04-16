@@ -27,14 +27,14 @@ component_tree:
   0:
     uuid: 7967e0b9-c9cc-421f-a11b-2be19fd12f6c
     component_id: sdc.vartheme_bs5.card-featured
-    component_version: c0b39338e25589bb
+    component_version: 16049086a06ff817
     inputs: '{"media_position":"start","ratio":"ratio-21x9","fit":"object-fit-cover","card_border":false,"padded":true,"equal_height":true,"content_vertical_alignment":"justify-content-center","columns_sm_size":"06_06","link_url":{"sourceType":"host-entity-url","absolute":false},"stretched_link":true,"media_image":{"sourceType":"entity-field","expression":"ℹ︎␜entity:node:blog␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}"}}'
   '0:content:0':
     parent_uuid: 7967e0b9-c9cc-421f-a11b-2be19fd12f6c
     slot: content
     uuid: 6670323d-8a39-4563-a676-79d262d191ac
     component_id: sdc.vartheme_bs5.heading
-    component_version: e6bff30240e54097
+    component_version: e3d793250a52296e
     inputs: '{"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
   '0:content:1':
     parent_uuid: 7967e0b9-c9cc-421f-a11b-2be19fd12f6c
@@ -55,7 +55,7 @@ component_tree:
     slot: content
     uuid: 8f023d36-cc53-4fcc-bce8-b01a9bf053e2
     component_id: sdc.vartheme_bs5.date
-    component_version: 3eae6f5d223f6bda
+    component_version: 419d2b516956a02e
     inputs: '{"date":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue","adapter":"unix_to_date"}}'
   1:
     uuid: 096c1178-06d5-4361-a8cc-b03f0e0504ea
