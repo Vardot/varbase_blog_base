@@ -34,7 +34,7 @@ component_tree:
     slot: content
     uuid: 829ce981-ffd4-4465-9409-bb447da6afa6
     component_id: sdc.vartheme_bs5.heading
-    component_version: e3d793250a52296e
+    component_version: e6bff30240e54097
     inputs: '{"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
   '0:content:1':
     parent_uuid: 07fdc43f-fcd5-4618-92f9-04ff48726f96
@@ -55,6 +55,6 @@ component_tree:
     slot: content
     uuid: c23b5265-5f3b-4351-b728-69e2bf6c35ee
     component_id: sdc.vartheme_bs5.date
-    component_version: 419d2b516956a02e
+    component_version: 3eae6f5d223f6bda
     inputs: '{"text_color":"text-white","date":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue","adapter":"unix_to_date"}}'
 exposed_slots: {  }
