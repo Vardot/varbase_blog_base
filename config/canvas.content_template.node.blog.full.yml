@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - canvas.component.block.system_breadcrumb_block
     - canvas.component.sdc.vartheme_bs5.date
     - canvas.component.sdc.vartheme_bs5.heading
     - canvas.component.sdc.vartheme_bs5.image
@@ -24,6 +25,11 @@ content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: full
 component_tree:
+  -
+    uuid: 0f26dedc-d75e-4fc9-b942-726ad8431e86
+    component_id: block.system_breadcrumb_block
+    component_version: ad6359c331fc7c45
+    inputs: '{"label":"Breadcrumbs","label_display":"0"}'
   -
     uuid: 12f585e3-f476-48b1-a7d2-16614ec08489
     component_id: sdc.vartheme_bs5.heading
