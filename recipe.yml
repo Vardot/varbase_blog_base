@@ -11,6 +11,16 @@ install:
 config:
   strict: false
   actions:
+    user.role.anonymous:
+      grantPermissions:
+        - 'access_unpublished node blog'
+        - 'access_unpublished taxonomy_term blog_categories'
+        - 'access_unpublished taxonomy_term tags'
+    user.role.authenticated:
+      grantPermissions:
+        - 'access_unpublished node blog'
+        - 'access_unpublished taxonomy_term blog_categories'
+        - 'access_unpublished taxonomy_term tags'
     user.role.content_editor:
       grantPermissions:
         - 'create blog content'
