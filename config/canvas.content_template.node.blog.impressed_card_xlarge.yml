@@ -34,14 +34,14 @@ component_tree:
     slot: content
     uuid: f27e2b01-0a43-42ae-af5f-478f5a805fa5
     component_id: sdc.vartheme_bs5.heading
-    component_version: e6bff30240e54097
+    component_version: 98b47f40fce531b1
     inputs: '{"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
   '0:content:1':
     parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
     slot: content
     uuid: a382ec53-20ed-4ae0-a028-1dad2e8a9be5
     component_id: sdc.vartheme_bs5.rich-text
-    component_version: 81e8d07ea267bfa1
+    component_version: 332465bfc1fd8aa0
     inputs: '{"trim":true,"trim_length":40,"trim_units":"words","suffix":" ...","strip_html":true,"text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"}}'
   '0:content:2':
     parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
