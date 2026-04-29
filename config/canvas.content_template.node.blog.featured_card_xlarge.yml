@@ -35,7 +35,7 @@ component_tree:
     uuid: 6670323d-8a39-4563-a676-79d262d191ac
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
+    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
   '0:content:1':
     parent_uuid: 7967e0b9-c9cc-421f-a11b-2be19fd12f6c
     slot: content

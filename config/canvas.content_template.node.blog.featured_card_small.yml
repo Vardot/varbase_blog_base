@@ -32,7 +32,7 @@ component_tree:
     uuid: d227d12c-14bf-46ee-b536-2149dfa1858a
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
+    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
   1:
     uuid: bf75b7b5-5367-4791-82d9-a3e2757191c0
     component_id: sdc.vartheme_bs5.spacer
