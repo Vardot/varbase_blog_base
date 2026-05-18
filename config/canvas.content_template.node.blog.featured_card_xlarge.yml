@@ -26,7 +26,7 @@ component_tree:
   0:7967e0b9-c9cc-421f-a11b-2be19fd12f6c:
     uuid: 7967e0b9-c9cc-421f-a11b-2be19fd12f6c
     component_id: sdc.vartheme_bs5.card-featured
-    component_version: c0b39338e25589bb
+    component_version: 5265c870d073e386
     inputs:
       media_position: start
       media_image:
@@ -35,7 +35,8 @@ component_tree:
       ratio: ratio-21x9
       fit: object-fit-cover
       card_border: false
-      padded: true
+      padded: false
+      corner_style: rounded-3
       equal_height: true
       stretched_link: true
       link_url:

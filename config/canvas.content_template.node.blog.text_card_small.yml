@@ -21,6 +21,7 @@ component_tree:
     inputs:
       card_border: false
       padded: false
+      corner_style: rounded-3
       equal_height: true
       stretched_link: true
       link_url:

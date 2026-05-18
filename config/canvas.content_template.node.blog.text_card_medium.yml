@@ -21,7 +21,8 @@ component_tree:
     component_version: e967d8799a3f772e
     inputs:
       card_border: false
-      padded: true
+      padded: false
+      corner_style: rounded-3
       box_shadow: shadow-none
       equal_height: true
       stretched_link: true
