@@ -2,64 +2,82 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.sdc.vartheme_bs5.card-featured
-    - canvas.component.sdc.vartheme_bs5.date
-    - canvas.component.sdc.vartheme_bs5.heading
-    - canvas.component.sdc.vartheme_bs5.rich-text
-    - canvas.component.sdc.vartheme_bs5.spacer
-    - core.entity_view_mode.node.featured_card_large
-    - field.field.media.image.field_media_image
-    - field.field.node.blog.field_content
-    - field.field.node.blog.field_featured_image
-    - image.style.canvas_parametrized_width
-    - media.type.image
-    - node.type.blog
+  - canvas.component.sdc.vartheme_bs5.card-featured
+  - canvas.component.sdc.vartheme_bs5.date
+  - canvas.component.sdc.vartheme_bs5.heading
+  - canvas.component.sdc.vartheme_bs5.rich-text
+  - core.entity_view_mode.node.featured_card_large
+  - field.field.media.image.field_media_image
+  - field.field.node.blog.field_content
+  - field.field.node.blog.field_featured_image
+  - image.style.canvas_parametrized_width
+  - media.type.image
+  - node.type.blog
   module:
-    - file
-    - media
-    - node
-    - options
+  - file
+  - media
+  - node
+  - options
 id: node.blog.featured_card_large
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: featured_card_large
 component_tree:
-  0:
+  0:6815c028-6b72-4de5-a1cc-ef83243a3c29:
     uuid: 6815c028-6b72-4de5-a1cc-ef83243a3c29
     component_id: sdc.vartheme_bs5.card-featured
     component_version: c0b39338e25589bb
-    inputs: '{"media_position":"start","ratio":"ratio-16x9","fit":"object-fit-cover","card_border":false,"padded":true,"equal_height":true,"content_vertical_alignment":"justify-content-center","columns_sm_size":"04_08","link_url":{"sourceType":"host-entity-url","absolute":false},"stretched_link":true,"media_image":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"}}'
-  '0:content:0':
+    inputs:
+      media_position: start
+      media_image:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      card_border: false
+      padded: true
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+      content_vertical_alignment: justify-content-center
+      columns_sm_size: 04_08
+  0:content:0:2f8c1a25-aa87-4ce1-b70f-b8a6c0b873d8:
     parent_uuid: 6815c028-6b72-4de5-a1cc-ef83243a3c29
     slot: content
     uuid: 2f8c1a25-aa87-4ce1-b70f-b8a6c0b873d8
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
-  '0:content:1':
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝title␞␟value
+      level: 3
+  0:content:1:a6e3f9aa-92dd-40d5-91fc-308edbedada8:
     parent_uuid: 6815c028-6b72-4de5-a1cc-ef83243a3c29
     slot: content
     uuid: a6e3f9aa-92dd-40d5-91fc-308edbedada8
     component_id: sdc.vartheme_bs5.rich-text
     component_version: 332465bfc1fd8aa0
-    inputs: '{"trim":true,"trim_length":90,"trim_units":"words","suffix":" ...","strip_html":true,"text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"}}'
-  '0:content:2':
-    parent_uuid: 6815c028-6b72-4de5-a1cc-ef83243a3c29
-    slot: content
-    uuid: 834ee5d5-b216-46e7-9aea-991e69209c1e
-    component_id: sdc.vartheme_bs5.spacer
-    component_version: e62b9a2394578426
-    inputs: '{"size":"py-1"}'
-  '0:content:3':
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝field_content␞␟processed
+      trim: true
+      trim_length: 90
+      trim_units: words
+      suffix: ' ...'
+      strip_html: true
+  0:content:2:535d0338-aece-4e01-b63f-345af5081355:
     parent_uuid: 6815c028-6b72-4de5-a1cc-ef83243a3c29
     slot: content
     uuid: 535d0338-aece-4e01-b63f-345af5081355
     component_id: sdc.vartheme_bs5.date
     component_version: 3eae6f5d223f6bda
-    inputs: '{"date":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue","adapter":"unix_to_date"}}'
-  1:
-    uuid: 742ad91f-94ff-4adb-aca6-4281fa4705eb
-    component_id: sdc.vartheme_bs5.spacer
-    component_version: e62b9a2394578426
-    inputs: '{"size":"py-3"}'
-exposed_slots: {  }
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝created␞␟value
+        adapter: unix_to_date
+exposed_slots: {}

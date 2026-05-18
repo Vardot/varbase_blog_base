@@ -2,53 +2,52 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.sdc.vartheme_bs5.card-text
-    - canvas.component.sdc.vartheme_bs5.date
-    - canvas.component.sdc.vartheme_bs5.heading
-    - canvas.component.sdc.vartheme_bs5.rich-text
-    - canvas.component.sdc.vartheme_bs5.spacer
-    - core.entity_view_mode.node.text_card_medium
-    - field.field.node.blog.field_content
-    - node.type.blog
+  - canvas.component.sdc.vartheme_bs5.card-text
+  - canvas.component.sdc.vartheme_bs5.date
+  - canvas.component.sdc.vartheme_bs5.heading
+  - core.entity_view_mode.node.text_card_medium
+  - node.type.blog
   module:
-    - node
-    - options
+  - node
+  - options
 id: node.blog.text_card_medium
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_medium
 component_tree:
-  0:
+  0:b3f6a7b8-e9f0-4412-3456-901234567801:
     uuid: b3f6a7b8-e9f0-4412-3456-901234567801
     component_id: sdc.vartheme_bs5.card-text
     component_version: e967d8799a3f772e
-    inputs: '{"card_border":false,"padded":true,"equal_height":true,"box_shadow":"shadow","link_url":{"sourceType":"host-entity-url","absolute":false},"stretched_link":true}'
-  '0:content:0':
+    inputs:
+      card_border: false
+      padded: true
+      box_shadow: shadow-none
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  0:content:0:001ce551-757c-4505-b343-0dafdd0e7eab:
     parent_uuid: b3f6a7b8-e9f0-4412-3456-901234567801
     slot: content
     uuid: 001ce551-757c-4505-b343-0dafdd0e7eab
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
-  '0:content:1':
-    parent_uuid: b3f6a7b8-e9f0-4412-3456-901234567801
-    slot: content
-    uuid: 59bf353d-7355-40d8-8f6d-c6cdbc9ef61e
-    component_id: sdc.vartheme_bs5.rich-text
-    component_version: 332465bfc1fd8aa0
-    inputs: '{"trim":true,"trim_length":30,"trim_units":"words","suffix":" ...","strip_html":true,"text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"}}'
-  '0:content:2':
-    parent_uuid: b3f6a7b8-e9f0-4412-3456-901234567801
-    slot: content
-    uuid: a63e2f99-846e-4a15-91c8-faad44b00e2a
-    component_id: sdc.vartheme_bs5.spacer
-    component_version: e62b9a2394578426
-    inputs: '{"size":"py-1"}'
-  '0:content:3':
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝title␞␟value
+      level: 3
+  0:content:1:a629756a-9e5f-4413-91ef-9120cb2f9ef1:
     parent_uuid: b3f6a7b8-e9f0-4412-3456-901234567801
     slot: content
     uuid: a629756a-9e5f-4413-91ef-9120cb2f9ef1
     component_id: sdc.vartheme_bs5.date
     component_version: 3eae6f5d223f6bda
-    inputs: '{"date":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue","adapter":"unix_to_date"}}'
-exposed_slots: {  }
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝created␞␟value
+        adapter: unix_to_date
+exposed_slots: {}

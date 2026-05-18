@@ -2,27 +2,39 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.sdc.vartheme_bs5.card-text
-    - canvas.component.sdc.vartheme_bs5.heading
-    - core.entity_view_mode.node.text_card_small
-    - node.type.blog
+  - canvas.component.sdc.vartheme_bs5.card-text
+  - canvas.component.sdc.vartheme_bs5.heading
+  - core.entity_view_mode.node.text_card_small
+  - node.type.blog
   module:
-    - node
+  - node
+  - options
 id: node.blog.text_card_small
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_small
 component_tree:
-  0:
+  0:b4f7a8b9-f0a1-4523-4567-012345678912:
     uuid: b4f7a8b9-f0a1-4523-4567-012345678912
     component_id: sdc.vartheme_bs5.card-text
     component_version: e967d8799a3f772e
-    inputs: '{"card_border":false,"padded":false,"equal_height":true,"link_url":{"sourceType":"host-entity-url","absolute":false},"stretched_link":true}'
-  '0:content:0':
+    inputs:
+      card_border: false
+      padded: false
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  0:content:0:cc0f53da-9677-45e4-ae70-d3c0a818a24a:
     parent_uuid: b4f7a8b9-f0a1-4523-4567-012345678912
     slot: content
     uuid: cc0f53da-9677-45e4-ae70-d3c0a818a24a
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
-exposed_slots: {  }
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝title␞␟value
+      level: 3
+exposed_slots: {}

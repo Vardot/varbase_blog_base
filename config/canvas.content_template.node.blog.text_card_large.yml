@@ -2,53 +2,69 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.sdc.vartheme_bs5.card-text
-    - canvas.component.sdc.vartheme_bs5.date
-    - canvas.component.sdc.vartheme_bs5.heading
-    - canvas.component.sdc.vartheme_bs5.rich-text
-    - canvas.component.sdc.vartheme_bs5.spacer
-    - core.entity_view_mode.node.text_card_large
-    - field.field.node.blog.field_content
-    - node.type.blog
+  - canvas.component.sdc.vartheme_bs5.card-text
+  - canvas.component.sdc.vartheme_bs5.date
+  - canvas.component.sdc.vartheme_bs5.heading
+  - canvas.component.sdc.vartheme_bs5.rich-text
+  - core.entity_view_mode.node.text_card_large
+  - field.field.node.blog.field_content
+  - node.type.blog
   module:
-    - node
-    - options
+  - node
+  - options
 id: node.blog.text_card_large
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_large
 component_tree:
-  0:
+  0:b2f5a6b7-d8e9-4301-2345-890123456790:
     uuid: b2f5a6b7-d8e9-4301-2345-890123456790
     component_id: sdc.vartheme_bs5.card-text
     component_version: e967d8799a3f772e
-    inputs: '{"card_border":false,"padded":true,"equal_height":true,"box_shadow":"shadow","link_url":{"sourceType":"host-entity-url","absolute":false},"stretched_link":true}'
-  '0:content:0':
+    inputs:
+      card_border: false
+      padded: true
+      box_shadow: shadow-none
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  0:content:0:089c6da8-7af5-4d46-9cab-4eeecc00fa6a:
     parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
     slot: content
     uuid: 089c6da8-7af5-4d46-9cab-4eeecc00fa6a
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
-  '0:content:1':
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝title␞␟value
+      level: 3
+  0:content:1:3f66abba-d5a0-4c2c-8da2-85ad873e7fe5:
     parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
     slot: content
     uuid: 3f66abba-d5a0-4c2c-8da2-85ad873e7fe5
     component_id: sdc.vartheme_bs5.rich-text
     component_version: 332465bfc1fd8aa0
-    inputs: '{"trim":true,"trim_length":40,"trim_units":"words","suffix":" ...","strip_html":true,"text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"}}'
-  '0:content:2':
-    parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
-    slot: content
-    uuid: cc8bc141-73e2-4ef1-b276-4d9d9fbc16e5
-    component_id: sdc.vartheme_bs5.spacer
-    component_version: e62b9a2394578426
-    inputs: '{"size":"py-1"}'
-  '0:content:3':
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝field_content␞␟processed
+      trim: true
+      trim_length: 40
+      trim_units: words
+      suffix: ' ...'
+      strip_html: true
+  0:content:2:c36f8822-d5b3-4dd0-959d-a953684d3b6e:
     parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
     slot: content
     uuid: c36f8822-d5b3-4dd0-959d-a953684d3b6e
     component_id: sdc.vartheme_bs5.date
     component_version: 3eae6f5d223f6bda
-    inputs: '{"date":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue","adapter":"unix_to_date"}}'
-exposed_slots: {  }
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝created␞␟value
+        adapter: unix_to_date
+exposed_slots: {}

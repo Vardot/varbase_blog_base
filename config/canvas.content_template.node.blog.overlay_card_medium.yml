@@ -2,59 +2,67 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.sdc.vartheme_bs5.card-overlay
-    - canvas.component.sdc.vartheme_bs5.date
-    - canvas.component.sdc.vartheme_bs5.heading
-    - canvas.component.sdc.vartheme_bs5.rich-text
-    - canvas.component.sdc.vartheme_bs5.spacer
-    - core.entity_view_mode.node.overlay_card_medium
-    - field.field.media.image.field_media_image
-    - field.field.node.blog.field_content
-    - field.field.node.blog.field_featured_image
-    - image.style.canvas_parametrized_width
-    - media.type.image
-    - node.type.blog
+  - canvas.component.sdc.vartheme_bs5.card-overlay
+  - canvas.component.sdc.vartheme_bs5.date
+  - canvas.component.sdc.vartheme_bs5.heading
+  - core.entity_view_mode.node.overlay_card_medium
+  - field.field.media.image.field_media_image
+  - field.field.node.blog.field_featured_image
+  - image.style.canvas_parametrized_width
+  - media.type.image
+  - node.type.blog
   module:
-    - file
-    - media
-    - node
-    - options
+  - file
+  - media
+  - node
+  - options
 id: node.blog.overlay_card_medium
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: overlay_card_medium
 component_tree:
-  0:
+  0:07fdc43f-fcd5-4618-92f9-04ff48726f96:
     uuid: 07fdc43f-fcd5-4618-92f9-04ff48726f96
     component_id: sdc.vartheme_bs5.card-overlay
     component_version: a888f80614f996a0
-    inputs: '{"ratio":"ratio-16x9","fit":"object-fit-cover","padded":true,"equal_height":true,"box_shadow":"shadow","overlay_color":"bg-dark","overlay_opacity":"bg-opacity-50","h_align":"text-start","v_align":"align-items-end","link_url":{"sourceType":"host-entity-url","absolute":false},"stretched_link":true,"media_image":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"}}'
-  '0:content:0':
+    inputs:
+      media_image:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      padded: true
+      box_shadow: shadow-none
+      overlay_color: bg-dark
+      overlay_opacity: bg-opacity-50
+      equal_height: true
+      h_align: text-start
+      v_align: align-items-end
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  0:content:0:829ce981-ffd4-4465-9409-bb447da6afa6:
     parent_uuid: 07fdc43f-fcd5-4618-92f9-04ff48726f96
     slot: content
     uuid: 829ce981-ffd4-4465-9409-bb447da6afa6
     component_id: sdc.vartheme_bs5.heading
     component_version: 98b47f40fce531b1
-    inputs: '{"level":3,"heading_text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"}}'
-  '0:content:1':
-    parent_uuid: 07fdc43f-fcd5-4618-92f9-04ff48726f96
-    slot: content
-    uuid: 3c46d29f-c4d1-4ec7-95c9-178387a987ab
-    component_id: sdc.vartheme_bs5.rich-text
-    component_version: 332465bfc1fd8aa0
-    inputs: '{"trim":true,"trim_length":30,"trim_units":"words","suffix":" ...","strip_html":true,"text":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"}}'
-  '0:content:2':
-    parent_uuid: 07fdc43f-fcd5-4618-92f9-04ff48726f96
-    slot: content
-    uuid: ac570d2e-4251-4701-bf02-bba28fcbfe87
-    component_id: sdc.vartheme_bs5.spacer
-    component_version: e62b9a2394578426
-    inputs: '{"size":"py-1"}'
-  '0:content:3':
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝title␞␟value
+      level: 3
+  0:content:1:c23b5265-5f3b-4351-b728-69e2bf6c35ee:
     parent_uuid: 07fdc43f-fcd5-4618-92f9-04ff48726f96
     slot: content
     uuid: c23b5265-5f3b-4351-b728-69e2bf6c35ee
     component_id: sdc.vartheme_bs5.date
     component_version: 3eae6f5d223f6bda
-    inputs: '{"text_color":"text-white","date":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue","adapter":"unix_to_date"}}'
-exposed_slots: {  }
+    inputs:
+      date:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝created␞␟value
+        adapter: unix_to_date
+      text_color: text-white
+exposed_slots: {}
