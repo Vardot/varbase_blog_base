@@ -17,7 +17,7 @@ component_tree:
   0:b4f7a8b9-f0a1-4523-4567-012345678912:
     uuid: b4f7a8b9-f0a1-4523-4567-012345678912
     component_id: sdc.vartheme_bs5.card-text
-    component_version: e967d8799a3f772e
+    component_version: 4253a4e8d24d8b08
     inputs:
       card_border: false
       padded: false

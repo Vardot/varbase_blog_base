@@ -53,7 +53,7 @@ component_tree:
   -
     uuid: 02a93dcf-d3fa-4718-b7ef-5a019d0a66b9
     component_id: sdc.vartheme_bs5.image
-    component_version: 334ae55c75fd088a
+    component_version: 20b07c548b4cf729
     inputs: '{"media":{"sourceType":"entity-field","expression":"\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"},"target":"self","ratio":"ratio-auto","fit":"object-fit-cover","width":"w-100","rounded":"rounded-0","loading":"lazy"}'
   -
     uuid: 13efc879-4efa-4ca8-a71f-9003f6151ce2

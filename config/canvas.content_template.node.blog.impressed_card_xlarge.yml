@@ -26,7 +26,7 @@ component_tree:
   0:9d045856-dab4-4f82-843a-76538cdedd3b:
     uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
     component_id: sdc.vartheme_bs5.card-impressed
-    component_version: 8181eed6ae681360
+    component_version: a1a37e78e3deedc6
     inputs:
       media_position: top
       media_image:
