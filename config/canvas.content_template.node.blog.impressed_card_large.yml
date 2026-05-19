@@ -35,6 +35,7 @@ component_tree:
       ratio: ratio-16x9
       fit: object-fit-cover
       card_border: false
+      corner_style: rounded-3
       padded: false
       box_shadow: shadow-none
       equal_height: true
