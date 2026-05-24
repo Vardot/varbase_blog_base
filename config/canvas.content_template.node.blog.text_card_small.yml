@@ -2,19 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-  - canvas.component.sdc.vartheme_bs5.card-text
-  - canvas.component.sdc.vartheme_bs5.heading
-  - core.entity_view_mode.node.text_card_small
-  - node.type.blog
+    - core.entity_view_mode.node.text_card_small
+    - node.type.blog
   module:
-  - node
-  - options
+    - node
 id: node.blog.text_card_small
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_small
 component_tree:
-  0:b4f7a8b9-f0a1-4523-4567-012345678912:
+  b4f7a8b9-f0a1-4523-4567-012345678912:
     uuid: b4f7a8b9-f0a1-4523-4567-012345678912
     component_id: sdc.vartheme_bs5.card-text
     component_version: 4253a4e8d24d8b08
@@ -27,7 +24,7 @@ component_tree:
       link_url:
         sourceType: host-entity-url
         absolute: false
-  0:content:0:cc0f53da-9677-45e4-ae70-d3c0a818a24a:
+  cc0f53da-9677-45e4-ae70-d3c0a818a24a:
     parent_uuid: b4f7a8b9-f0a1-4523-4567-012345678912
     slot: content
     uuid: cc0f53da-9677-45e4-ae70-d3c0a818a24a
@@ -36,6 +33,6 @@ component_tree:
     inputs:
       heading_text:
         sourceType: entity-field
-        expression: ℹ︎␜entity:node:blog␝title␞␟value
+        expression: 'ℹ︎␜entity:node:blog␝title␞␟value'
       level: 3
-exposed_slots: {}
+exposed_slots: []

@@ -41,7 +41,7 @@ content:
       summary_handler: full
       trim_options:
         text: true
-    third_party_settings: {  }
+    third_party_settings: []
     region: content
 hidden:
   content_moderation_control: true

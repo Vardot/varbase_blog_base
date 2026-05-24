@@ -35,7 +35,7 @@ content:
       trim_options:
         text: text
       more_class: more-link
-    third_party_settings: {  }
+    third_party_settings: []
     region: content
   field_featured_image:
     type: entity_reference_entity_view
@@ -43,7 +43,7 @@ content:
     settings:
       view_mode: background_media
       link: false
-    third_party_settings: {  }
+    third_party_settings: []
     weight: 0
     region: content
 hidden:

@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.blog.field_seo_title
     - field.field.node.blog.field_tags
     - node.type.blog
-    - workflows.workflow.varbase_editorial_workflow
   module:
     - advanced_text_formatter
     - content_moderation
@@ -54,14 +53,14 @@ content:
     type: datetime_timestamp
     weight: 14
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   field_blog_categories:
     type: options_select
     weight: 10
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   field_content:
     type: text_textarea
     weight: 9
@@ -69,7 +68,7 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: []
   field_description:
     type: string_textarea
     weight: 8
@@ -77,14 +76,14 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: []
   field_featured_image:
     type: media_library_widget
     weight: 7
     region: content
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types: []
+    third_party_settings: []
   field_seo_analysis:
     type: yoast_seo_widget
     weight: 18
@@ -94,7 +93,7 @@ content:
       edit_description: false
       render_theme: null
       render_view_mode: default
-    third_party_settings: {  }
+    third_party_settings: []
   field_seo_description:
     type: string_textarea
     weight: 16
@@ -102,14 +101,14 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: []
   field_seo_image:
     type: media_library_widget
     weight: 17
     region: content
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types: []
+    third_party_settings: []
   field_seo_title:
     type: string_textfield
     weight: 15
@@ -117,7 +116,7 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: []
   field_tags:
     type: tagify_entity_reference_autocomplete_widget
     weight: 11
@@ -131,68 +130,68 @@ content:
       show_info_label: 0
       info_label: ''
       parent_selection: 1
-    third_party_settings: {  }
+    third_party_settings: []
   moderation_state:
     type: moderation_state_default
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   path:
     type: path
     weight: 17
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   promote:
     type: boolean_checkbox
     weight: 15
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: []
   publish_on:
     type: datetime_timestamp_no_default
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   publish_state:
     type: options_select
     weight: 3
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   publish_status:
     type: scheduler_moderation
     weight: -4
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   scheduler_settings:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   simple_sitemap:
     weight: 10
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   status:
     type: boolean_checkbox
     weight: 18
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: []
   sticky:
     type: boolean_checkbox
     weight: 16
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: []
   title:
     type: string_textfield
     weight: 6
@@ -212,8 +211,8 @@ content:
   translation:
     weight: 12
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   uid:
     type: entity_reference_autocomplete
     weight: 13
@@ -223,18 +222,18 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings: []
   unpublish_on:
     type: datetime_timestamp_no_default
     weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
   unpublish_state:
     type: options_select
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
 hidden:
   url_redirects: true

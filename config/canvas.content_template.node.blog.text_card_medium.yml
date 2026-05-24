@@ -2,20 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-  - canvas.component.sdc.vartheme_bs5.card-text
-  - canvas.component.sdc.vartheme_bs5.date
-  - canvas.component.sdc.vartheme_bs5.heading
-  - core.entity_view_mode.node.text_card_medium
-  - node.type.blog
+    - core.entity_view_mode.node.text_card_medium
+    - node.type.blog
   module:
-  - node
-  - options
+    - node
 id: node.blog.text_card_medium
 content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_medium
 component_tree:
-  0:b3f6a7b8-e9f0-4412-3456-901234567801:
+  b3f6a7b8-e9f0-4412-3456-901234567801:
     uuid: b3f6a7b8-e9f0-4412-3456-901234567801
     component_id: sdc.vartheme_bs5.card-text
     component_version: 4253a4e8d24d8b08
@@ -29,7 +25,7 @@ component_tree:
       link_url:
         sourceType: host-entity-url
         absolute: false
-  0:content:0:001ce551-757c-4505-b343-0dafdd0e7eab:
+  001ce551-757c-4505-b343-0dafdd0e7eab:
     parent_uuid: b3f6a7b8-e9f0-4412-3456-901234567801
     slot: content
     uuid: 001ce551-757c-4505-b343-0dafdd0e7eab
@@ -38,9 +34,9 @@ component_tree:
     inputs:
       heading_text:
         sourceType: entity-field
-        expression: ℹ︎␜entity:node:blog␝title␞␟value
+        expression: 'ℹ︎␜entity:node:blog␝title␞␟value'
       level: 3
-  0:content:1:a629756a-9e5f-4413-91ef-9120cb2f9ef1:
+  a629756a-9e5f-4413-91ef-9120cb2f9ef1:
     parent_uuid: b3f6a7b8-e9f0-4412-3456-901234567801
     slot: content
     uuid: a629756a-9e5f-4413-91ef-9120cb2f9ef1
@@ -49,6 +45,6 @@ component_tree:
     inputs:
       date:
         sourceType: entity-field
-        expression: ℹ︎␜entity:node:blog␝created␞␟value
+        expression: 'ℹ︎␜entity:node:blog␝created␞␟value'
         adapter: unix_to_date
-exposed_slots: {}
+exposed_slots: []

@@ -12,7 +12,7 @@ label: Description
 description: 'Describe the blog post content. This appears as the description in search engine results.'
 required: true
 translatable: true
-default_value: {  }
+default_value: []
 default_value_callback: ''
-settings: {  }
+settings: []
 field_type: string_long

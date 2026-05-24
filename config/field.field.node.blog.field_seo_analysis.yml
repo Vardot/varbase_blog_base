@@ -14,7 +14,7 @@ label: 'SEO analysis'
 description: 'Pick the main keyword this page is about.'
 required: false
 translatable: true
-default_value: {  }
+default_value: []
 default_value_callback: ''
-settings: {  }
+settings: []
 field_type: yoast_seo

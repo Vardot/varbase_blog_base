@@ -25,8 +25,8 @@ content:
   field_content:
     type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
     weight: 2
     region: content
   field_featured_image:
@@ -37,7 +37,7 @@ content:
       image_style: ''
       image_loading:
         attribute: eager
-    third_party_settings: {  }
+    third_party_settings: []
     weight: 0
     region: content
   field_tags:
@@ -45,7 +45,7 @@ content:
     label: inline
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: []
     weight: 3
     region: content
 hidden:

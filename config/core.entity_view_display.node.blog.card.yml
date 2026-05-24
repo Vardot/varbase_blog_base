@@ -23,8 +23,8 @@ content:
   field_description:
     type: basic_string
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: []
+    third_party_settings: []
     weight: 1
     region: content
   field_featured_image:
@@ -33,7 +33,7 @@ content:
     settings:
       view_mode: media_16_09
       link: false
-    third_party_settings: {  }
+    third_party_settings: []
     weight: 0
     region: content
 hidden:
