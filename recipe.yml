@@ -8,9 +8,57 @@ recipes:
   - varbase_workflow_base
 install:
   - selective_better_exposed_filters
+  - webshare
 config:
   strict: false
+  import:
+    webshare: '*'
   actions:
+    webshare.settings:
+      simpleConfigUpdate:
+        icon_map:
+          linkedin:
+            pack: 'vartheme_social'
+            icon: 'linkedin'
+          facebook_share:
+            pack: 'vartheme_social'
+            icon: 'facebook'
+          x:
+            pack: 'vartheme_social'
+            icon: 'x'
+          whatsapp:
+            pack: 'vartheme_social'
+            icon: 'whatsapp'
+          copy:
+            pack: 'vartheme_social'
+            icon: 'clipboard'
+          email:
+            pack: 'vartheme_social'
+            icon: 'email'
+          telegram:
+            pack: 'vartheme_social'
+            icon: 'telegram'
+          reddit:
+            pack: 'vartheme_social'
+            icon: 'reddit'
+          pinterest:
+            pack: 'vartheme_social'
+            icon: 'pinterest'
+          threads:
+            pack: 'vartheme_social'
+            icon: 'threads'
+          bluesky:
+            pack: 'vartheme_social'
+            icon: 'bluesky'
+          tumblr:
+            pack: 'vartheme_social'
+            icon: 'tumblr'
+          mastodon:
+            pack: 'vartheme_social'
+            icon: 'mastodon'
+        native_share_icon:
+          pack: 'vartheme_social'
+          icon: 'share-fill'
     user.role.anonymous:
       grantPermissions:
         - 'access_unpublished node blog'
@@ -102,5 +150,6 @@ config:
         - 'view unpublished term names in blog_categories'
         - 'view unpublished terms in blog_categories'
         - 'view vocabulary name of blog_categories'
+        - 'administer webshare'
     workflows.workflow.varbase_editorial_workflow:
       addNodeTypes: ['blog']
