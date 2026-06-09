@@ -55,7 +55,7 @@ component_tree:
     slot: content
     uuid: 80b98f11-1b9c-4776-8a80-d38670af400d
     component_id: sdc.vartheme_bs5.rich-text
-    component_version: 332465bfc1fd8aa0
+    component_version: d9dc92380d2a2af4
     inputs:
       text:
         sourceType: entity-field
