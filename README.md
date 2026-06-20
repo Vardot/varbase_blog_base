@@ -1,3 +1,5 @@
+[![Varbase](https://raw.githubusercontent.com/Vardot/varbase/11.0.x/images/varbase-logo.png)](https://www.drupal.org/project/varbase)
+
 # Varbase Blog Base
 
 A recipe to provide a blog post content type, listing page, and related configuration for Varbase. Use Blog to publish blog posts by different authors in the Blog section of the site.
