@@ -12,8 +12,8 @@ content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_large
 component_tree:
-  b2f5a6b7-d8e9-4301-2345-890123456790:
-    uuid: b2f5a6b7-d8e9-4301-2345-890123456790
+  dd4d34db-f694-450d-a445-ebe535861880:
+    uuid: dd4d34db-f694-450d-a445-ebe535861880
     component_id: sdc.vartheme_bs5.card-text
     component_version: e029fefa26d20f4f
     inputs:
@@ -27,7 +27,7 @@ component_tree:
         sourceType: host-entity-url
         absolute: false
   089c6da8-7af5-4d46-9cab-4eeecc00fa6a:
-    parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
+    parent_uuid: dd4d34db-f694-450d-a445-ebe535861880
     slot: content
     uuid: 089c6da8-7af5-4d46-9cab-4eeecc00fa6a
     component_id: sdc.vartheme_bs5.heading
@@ -38,7 +38,7 @@ component_tree:
         expression: ℹ︎␜entity:node:blog␝title␞␟value
       level: 3
   3f66abba-d5a0-4c2c-8da2-85ad873e7fe5:
-    parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
+    parent_uuid: dd4d34db-f694-450d-a445-ebe535861880
     slot: content
     uuid: 3f66abba-d5a0-4c2c-8da2-85ad873e7fe5
     component_id: sdc.vartheme_bs5.rich-text
@@ -53,7 +53,7 @@ component_tree:
       suffix: ' ...'
       strip_html: true
   c36f8822-d5b3-4dd0-959d-a953684d3b6e:
-    parent_uuid: b2f5a6b7-d8e9-4301-2345-890123456790
+    parent_uuid: dd4d34db-f694-450d-a445-ebe535861880
     slot: content
     uuid: c36f8822-d5b3-4dd0-959d-a953684d3b6e
     component_id: sdc.vartheme_bs5.date

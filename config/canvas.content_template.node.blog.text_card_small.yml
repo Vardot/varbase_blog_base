@@ -11,8 +11,8 @@ content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: text_card_small
 component_tree:
-  b4f7a8b9-f0a1-4523-4567-012345678912:
-    uuid: b4f7a8b9-f0a1-4523-4567-012345678912
+  0bafa9aa-a5c0-427f-a6b8-2cd892847a2d:
+    uuid: 0bafa9aa-a5c0-427f-a6b8-2cd892847a2d
     component_id: sdc.vartheme_bs5.card-text
     component_version: e029fefa26d20f4f
     inputs:
@@ -25,7 +25,7 @@ component_tree:
         sourceType: host-entity-url
         absolute: false
   cc0f53da-9677-45e4-ae70-d3c0a818a24a:
-    parent_uuid: b4f7a8b9-f0a1-4523-4567-012345678912
+    parent_uuid: 0bafa9aa-a5c0-427f-a6b8-2cd892847a2d
     slot: content
     uuid: cc0f53da-9677-45e4-ae70-d3c0a818a24a
     component_id: sdc.vartheme_bs5.heading

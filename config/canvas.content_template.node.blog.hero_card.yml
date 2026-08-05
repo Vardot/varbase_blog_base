@@ -18,8 +18,8 @@ content_entity_type_id: node
 content_entity_type_bundle: blog
 content_entity_type_view_mode: hero_card
 component_tree:
-  c1e4f5a6-c7d8-4290-1234-789012345689:
-    uuid: c1e4f5a6-c7d8-4290-1234-789012345689
+  f8745d67-7983-4ab9-b95f-6e14ccba7bd8:
+    uuid: f8745d67-7983-4ab9-b95f-6e14ccba7bd8
     component_id: sdc.vartheme_bs5.card
     component_version: 91ca18128c643751
     inputs:
