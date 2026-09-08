@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-09-08
+### Fixed
+- Require the released Webshare 2.0.0 instead of the dev branch
+  ([#3621559](https://www.drupal.org/i/3621559)).
+### Changed
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` for the release.
+- Pin the `drupal/varbase_content_base` dependency to `~1.0.0` for the release.
+- Pin the `drupal/varbase_media_base` dependency to `~1.0.0` for the release.
+- Pin the `drupal/varbase_seo_base` dependency to `~1.0.0` for the release.
+- Pin the `drupal/varbase_workflow_base` dependency to `~1.0.0` for the release.
+- Update the version badge to `1.0.1` in `README.md`.
+
 ## [1.0.0] - 2026-09-06
 ### Changed
 - Pin the `drupal/varbase_components` to `~4.0.0`, `drupal/varbase_content_base` to `~1.0.0`, `drupal/varbase_media_base` to `~1.0.0`, `drupal/varbase_seo_base` to `~1.0.0`, `drupal/varbase_workflow_base` to `~1.0.0`, and `drupal/webshare` to `~2.0.0` dependencies for the stable release.
@@ -37,7 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Blog Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.1...1.0.x
+[1.0.1]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0-beta1...1.0.0-rc1
 [1.0.0-beta1]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0-alpha3...1.0.0-beta1
