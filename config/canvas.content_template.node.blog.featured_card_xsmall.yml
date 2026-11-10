@@ -36,7 +36,7 @@ component_tree:
       link_url:
         sourceType: host-entity-url
         absolute: false
-      content_vertical_alignment: justify-content-center
+      content_vertical_alignment: align-items-center
   02cdd656-d77a-4728-ac56-dd9a7d7d224b:
     parent_uuid: 2f6d376d-79da-4bdf-a7be-82a0420883cc
     slot: content

@@ -36,8 +36,8 @@ component_tree:
       link_url:
         sourceType: host-entity-url
         absolute: false
-      content_vertical_alignment: justify-content-center
-      columns_sm_size: 0408
+      content_vertical_alignment: align-items-center
+      columns_sm_size: '04_08'
   d227d12c-14bf-46ee-b536-2149dfa1858a:
     parent_uuid: 84a88622-9965-4ee7-993d-bf982a17456c
     slot: content
