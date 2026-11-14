@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-11-14
+### Fixed
+- Use allowed Card featured values in the blog featured card templates
+  ([#3636883](https://www.drupal.org/i/3636883)).
+### Changed
+- Pin the `drupal/varbase_components` dependency to `~4.0.0` for the release.
+- Pin the `drupal/varbase_content_base` dependency to `~1.0.0` for the release.
+- Pin the `drupal/varbase_media_base` dependency to `~1.0.0` for the release.
+- Pin the `drupal/varbase_seo_base` dependency to `~1.0.0` for the release.
+- Pin the `drupal/varbase_workflow_base` dependency to `~1.0.0` for the release.
+- Update the version badge to `1.0.2` in `README.md`.
+
 ## [1.0.1] - 2026-09-08
 ### Fixed
 - Require the released Webshare 2.0.0 instead of the dev branch
@@ -49,7 +61,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Blog Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.1...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.2...1.0.x
+[1.0.2]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0...1.0.1
 [1.0.0]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0-rc1...1.0.0
 [1.0.0-rc1]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0-beta1...1.0.0-rc1
