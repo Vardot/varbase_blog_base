@@ -706,8 +706,12 @@ display:
         filters: false
         filter_groups: false
         header: false
+        link_display: false
+        link_url: false
       use_ajax: true
       display_description: ''
+      link_display: custom_url
+      link_url: ''
       header:
         area:
           id: area

@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Give the All blog posts display its own link display, so its filter form submits to the page
+  that shows it. Reset, and any submit without JavaScript, opened "Page not found" at `/blog/feed`
+  ([#3638263](https://git.drupalcode.org/project/varbase_blog_base/-/work_items/3638263)).
 
 ## [1.0.2] - 2026-11-14
 ### Fixed
