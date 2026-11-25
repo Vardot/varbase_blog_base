@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-11-25
+### Changed
+- Use caret constraints and allow Drupal 11.4 and later and Drupal 12 in Varbase Blog Base recipe ([#3638265](https://git.drupalcode.org/project/varbase_blog_base/-/work_items/3638265)).
+- Update the version badge to `1.0.4` in `README.md`.
+
 ## [1.0.3] - 2026-11-22
 ### Fixed
 - Give the All blog posts display its own link display, so its filter form submits to the page
@@ -74,7 +79,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release of the Varbase Blog Base recipe.
 
-[Unreleased]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.3...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.4...1.0.x
+[1.0.4]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.3...1.0.4
 [1.0.3]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.2...1.0.3
 [1.0.2]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.1...1.0.2
 [1.0.1]: https://git.drupalcode.org/project/varbase_blog_base/-/compare/1.0.0...1.0.1
